@@ -9,11 +9,9 @@ function IndexPage() {
 
   return (
     <>
-      <div className='has-background-light'>
         {gameData.map((content, index) => (
           <GameContainerBox key={index} content={content} />
         ))}
-      </div>
     </>
   );
 }

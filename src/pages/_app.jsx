@@ -8,11 +8,18 @@ import '../app/globals.css';
 
 function App({ Component, pageProps }) {
     return (
-        <I18nextProvider i18n={i18n}>
-            <Navbar />
-            {<Component {...pageProps} />}
-            <Footer />
-        </I18nextProvider>);
+        <>
+            <I18nextProvider i18n={i18n}>
+                <Navbar />
+                <section className="section  has-background-light">
+                    <div className="container">
+                        {<Component {...pageProps} />}
+                    </div>
+                </section>
+                <Footer />
+            </I18nextProvider>
+        </>
+    )
 }
 
 export default App;
