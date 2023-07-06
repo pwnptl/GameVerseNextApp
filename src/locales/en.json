@@ -1,8 +1,15 @@
 {
-    "welcome": "Welcome to my app!",
-    "description": "This is a description of my app.",
-    "buttonLabel": "Click me!",
+  "welcome": "Welcome to my app!",
+  "description": "This is a description of my app.",
+  "buttonLabel": "Click me!",
+  "error": {
     "404": "404",
     "page-not-found": "Page not found"
+  },
+  "footer": {
+    "footerRights": "© 2023 Your Company. All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "separator": " | "
   }
-  
+}

@@ -6,8 +6,8 @@ const ErrorPage = () => {
     <section className="hero is-halfheight is-primary is-bold">
       <div className="hero-body">
         <div className="container is-half">
-          <h1 className="title">{t("404")}</h1>
-          <h2 className="subtitle">{t("page-not-found")}</h2>
+          <h1 className="title">{t("error.404")}</h1>
+          <h2 className="subtitle">{t("error.page-not-found")}</h2>
         </div>
       </div>
     </section>
