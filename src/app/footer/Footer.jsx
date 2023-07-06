@@ -1,11 +1,22 @@
 import React from 'react';
+import t from '../../translation'
+import UrlConstants from '../components/URLConstants';
 
 const Footer = () => {
+
   return (
-    <footer className="footer">
+    <footer className="footer has-background-primary">
       <div className="content has-text-centered">
         <p>
-          © 2023 Your Company. All rights reserved. | <a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms of Service</a>
+          <span className="has-text-light">{t('footer.footerRights')}</span>
+          {t('footer.separator')}
+          <a href={UrlConstants.privacyPolicy} className="has-text-light">
+            {t('footer.privacyPolicy')}
+          </a>
+          {t('footer.separator')}
+          <a href={UrlConstants.termsOfService} className="has-text-light">
+            {t('footer.termsOfService')}
+          </a>
         </p>
       </div>
     </footer>
